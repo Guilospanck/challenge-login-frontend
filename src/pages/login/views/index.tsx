@@ -17,7 +17,8 @@ const LoginView = ({ viewModel }: Props) => {
         <SubtitleContainer>Para acessar a plataforma, <br /> faça seu login.</SubtitleContainer>
         <Form />
         <ForgotUserAndPassContainer>Esqueceu seu login ou senha?
-Clique aqui</ForgotUserAndPassContainer>
+          Clique aqui
+        </ForgotUserAndPassContainer>
       </FormContainer>
     </Container>
   );

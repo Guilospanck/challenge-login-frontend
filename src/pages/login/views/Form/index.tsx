@@ -27,7 +27,9 @@ const Form = () => {
       <InputContainer id="name" name="name" type="text" autoComplete="name" required placeholder="user.name@mail.com" />
       <LabelContainer htmlFor="name">SENHA</LabelContainer>
       <InputContainer id="pass" name="pass" type="password" autoComplete="pass" required placeholder="*******" />
-      <ButtonContainer type="submit">ENTRAR</ButtonContainer>
+      <div>
+        <ButtonContainer type="submit">ENTRAR</ButtonContainer>
+      </div>
     </form>
   )
 };
