@@ -10,7 +10,7 @@ export const LoginImage = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
 
-  @media only screen and (max-width: 1024px){
+  @media only screen and (max-width: 768px){
     background-position: 43%;
   }
 `;
@@ -22,7 +22,7 @@ export const Container = styled.div`
   width: 100vw;
   height: 100vh;
 
-  @media only screen and (max-width: 1024px){
+  @media only screen and (max-width: 768px){
     grid-template-columns: 30% 70%;
   }
 `;
@@ -35,40 +35,44 @@ export const FormContainer = styled.div`
 
 export const TitleContainer = styled.div`
   width: 231px;
-  height: 96px;
+  height: 14vh;
 
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
-  font-size: 40px;
-  line-height: 48px;
+  font-size: 2.5rem;
+  line-height: 3rem;
 
   color: #383E71;
 `;
 
 export const SubtitleContainer = styled.div`
   width: 222px;
-  height: 40px;
+  height: 6vh;
+  margin-top: 2.4vh;
+  margin-bottom: 4.1vh;
 
   font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 1rem;
+  line-height: 1.25rem;
 
   color: #989FDB;
 
 `;
 
 export const ForgotUserAndPassContainer = styled.div`
-  width: 212px;
-  height: 40px;
+  width: 256px;
+  height: auto;
+  margin-top: 32px;
+  margin-right: 0px !important;
 
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 
   text-align: center;
 

@@ -14,10 +14,9 @@ const LoginView = ({ viewModel }: Props) => {
       <LoginImage />
       <FormContainer>
         <TitleContainer>Olá, seja <br /> bem-vindo!</TitleContainer>
-        <SubtitleContainer>Para acessar a plataforma, <br /> faça seu login.</SubtitleContainer>
+        <SubtitleContainer>Para acessar a plataforma, faça seu login.</SubtitleContainer>
         <Form />
-        <ForgotUserAndPassContainer>Esqueceu seu login ou senha?
-          Clique aqui
+        <ForgotUserAndPassContainer>Esqueceu seu login ou senha? Clique aqui
         </ForgotUserAndPassContainer>
       </FormContainer>
     </Container>
