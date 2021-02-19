@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+export const FormContainer = styled.form`
+
+`;
+
 export const LabelContainer = styled.label`
     width: 72px;
     height: 2vh;
@@ -25,13 +29,21 @@ export const InputContainer = styled.input`
   border: 1px solid #989FDB;
   box-sizing: border-box;
   border-radius: 8px;
+  padding-left: 17px;
+
+  &:valid {
+    border: 1px solid green;
+  }
+
+  &:invalid {
+    border: 1px solid #FF377F;
+  }
 
   ::placeholder {
     font-style: normal;
     font-weight: normal;
     font-size: 10px;
     line-height: 3rem;
-    padding-left: 17px;
     color: #989FDB;
   }
 

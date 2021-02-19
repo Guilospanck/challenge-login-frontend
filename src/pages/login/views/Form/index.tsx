@@ -1,4 +1,4 @@
-import { InputContainer, LabelContainer, ButtonContainer, ButtonDivContainer } from './styles';
+import { InputContainer, LabelContainer, ButtonContainer, ButtonDivContainer, FormContainer } from './styles';
 
 const Form = () => {
   // const registerUser = async event => {
@@ -22,15 +22,16 @@ const Form = () => {
   // }
 
   return (
-    <form onSubmit={() => console.log('oi')}>
-      <LabelContainer htmlFor="name">E-MAIL</LabelContainer>
-      <InputContainer id="name" name="name" type="text" autoComplete="name" required placeholder="user.name@mail.com" />
-      <LabelContainer htmlFor="name">SENHA</LabelContainer>
+    <FormContainer onSubmit={() => console.log('oi')}>
+      <LabelContainer htmlFor="email">E-MAIL</LabelContainer>
+      <InputContainer id="email" name="email" type="email" autoComplete="email" required placeholder="user.name@mail.com" autoFocus
+      onInvalid={(event) => event.target.setCustomValidity('Informe um email válido.')} />
+      <LabelContainer htmlFor="pass">SENHA</LabelContainer>
       <InputContainer id="pass" name="pass" type="password" autoComplete="pass" required placeholder="*******" />
       <ButtonDivContainer>
         <ButtonContainer type="submit">ENTRAR</ButtonContainer>
       </ButtonDivContainer>
-    </form>
+    </FormContainer>
   )
 };
 
