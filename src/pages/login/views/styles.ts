@@ -16,11 +16,22 @@ export const LoginImage = styled.div`
 
   @media only screen and (max-width: 375px){
     grid-column: 1;
-    background-size: 140%;
+    background-size: 160%;
     background-position: 40%;
-    background-position-y: 0%;
+    background-position-y: -5%;
   }
 
+`;
+
+export const BackgroundRectangleMobile = styled.div`
+  @media only screen and (max-width: 375px){
+    position: absolute;
+    width: 382px;
+    height: 553px;
+    left: -4px;
+    top: 383px;
+    background: #130525;
+  }
 `;
 
 export const Container = styled.div`
