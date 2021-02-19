@@ -1,9 +1,9 @@
 import React from 'react';
 import { fireEvent } from '@testing-library/react';
-import Login from '../index';
-import { renderWithRedux } from '../../../tests/utils/renderRedux';
-import { login, TLoginReducer } from '../../../store/modules/login/reducers';
-import * as Actions from '../../../store/modules/login/actions';
+import Login from '../pages/login/index';
+import { renderWithRedux } from './utils/renderRedux';
+import { login, TLoginReducer } from '../store/modules/login/reducers';
+import * as Actions from '../store/modules/login/actions';
 
 
 const initial: TLoginReducer = {

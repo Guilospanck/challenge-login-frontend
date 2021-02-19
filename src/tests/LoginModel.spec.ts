@@ -1,4 +1,4 @@
-import { LoginModel } from './LoginModel';
+import { LoginModel } from '../models/login/LoginModel';
 
 describe('Login Model Layer Test', () => {
 
