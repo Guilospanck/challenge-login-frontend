@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-import Login from './login';
+import Login from '../components/login';
 
 const Home: React.FC = () => {
   return (

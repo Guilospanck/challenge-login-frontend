@@ -1,6 +1,6 @@
 import React from 'react';
 import { fireEvent } from '@testing-library/react';
-import Login from '../pages/login/index';
+import Login from '../components/login/index';
 import { renderWithRedux } from './utils/renderRedux';
 import { login, TLoginReducer } from '../store/modules/login/reducers';
 import * as Actions from '../store/modules/login/actions';
