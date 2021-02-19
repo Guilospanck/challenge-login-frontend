@@ -11,25 +11,30 @@
 
 Pequeno projeto realizado como teste técnico para vaga de Frontend Developer na Wiser. O projeto conta com uma tela simples de login (responsiva), onde o usuário terá validações visuais de seus inputs.
 
+Aplicação em servidor online: ![Vercel](https://wiser-challenge-login-frontend.vercel.app/)
 ![](https://github.com/Guilospanck/challenge-login-frontend/blob/main/wiser-frontend-test.gif)
 
 ## Instalação
 
 Clone o repositório
+```
+git clone https://github.com/Guilospanck/challenge-login-frontend.git
+cd challenge-login-frontend/
+```
+Rode o yarn para instalar as dependências necessárias do `package.json`
+```
+yarn
+```
+Então, para abrir o projeto, rode:
+```
+yarn dev
+```
+E navegue até localhost:3000/ no seu browser para ver o app funcionando.
+> Caso deseje encerrar a aplicação, execute CTRL C.
 
-## Exemplo de uso
-
-Alguns exemplos interessantes e úteis sobre como seu projeto pode ser utilizado. Adicione blocos de códigos e, se necessário, screenshots.
-
-_Para mais exemplos, consulte a [Wiki][wiki]._ 
-
-## Configuração para Desenvolvimento
-
-Descreva como instalar todas as dependências para desenvolvimento e como rodar um test-suite automatizado de algum tipo. Se necessário, faça isso para múltiplas plataformas.
-
-```sh
-make install
-npm test
+Para executar os testes, rode:
+```
+yarn test
 ```
 
 ## Meta
