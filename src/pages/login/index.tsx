@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import LoginView from "./views";
 
 import Form from './views/Form';
@@ -13,7 +14,12 @@ const FormComponent = () => {
 
 const Login = () => {
   return (
-    <LoginView FormComponent={FormComponent} />
+    <>
+      <Head>
+        <title>Challenge Login - Frontend - Wiser</title>
+      </Head>
+      <LoginView FormComponent={FormComponent} />
+    </>
   );
 
 };

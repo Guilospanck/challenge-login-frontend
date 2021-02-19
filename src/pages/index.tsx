@@ -1,17 +1,16 @@
 import Head from 'next/head';
 
+import Login from './login';
+
 const Home: React.FC = () => {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Challenge Login - Frontend - Wiser</title>
       </Head>
 
       <main>
-        <h1>
-          Hello world
-        </h1>
+        <Login />
       </main>
 
     </div>
