@@ -25,13 +25,23 @@ function* login({ payload }: { type: typeof LoginTypes.LOGIN_REQUEST; payload: L
   try {
     const response = yield call(
       axios.get,
-      `${process.env.REACT_APP_API_LOGIN}`,
+      `${process.env.NEXT_PUBLIC_API_LOGIN}`,
     );
 
-    toast.success('Você está logado!');
-    yield put(
-      loginSuccess(response)
-    );
+    if(response.data[0].email === payload.email && response.data[0].password === payload.password){
+      toast.success('Você está logado!');
+      yield put(loginSuccess(response.data[0]));
+    } else if (response.data[0].email === payload.email && response.data[0].password !== payload.password){
+      toast.warn('A senha está errada. Tente novamente.');
+      yield put(loginFailure());
+    } else if (response.data[0].email !== payload.email && response.data[0].password === payload.password) {
+      toast.warn('O email está errado. Tente novamente.');
+      yield put(loginFailure());
+    } else {
+      toast.error('Credenciais erradas. Tente novamente.');
+      yield put(loginFailure());
+    }
+
   } catch (err) {
     if (!err.response) {
       toast.error('Ocorreu um erro inesperado no servidor, tente novamente mais tarde');
