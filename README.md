@@ -17,7 +17,7 @@ Aplicação em servidor online: [Vercel](https://wiser-challenge-login-frontend.
 
 ## Instalação
 
-Clone o repositório
+Clone o repositório usando o [git](https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Instalando-o-Git)
 ```
 git clone https://github.com/Guilospanck/challenge-login-frontend.git
 cd challenge-login-frontend/
