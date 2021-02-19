@@ -11,21 +11,11 @@
 
 Pequeno projeto realizado como teste técnico para vaga de Frontend Developer na Wiser. O projeto conta com uma tela simples de login (responsiva), onde o usuário terá validações visuais de seus inputs.
 
-![](https://github.com/Guilospanck/challenge-login-frontend/edit/main/wiser-frontend-test)
+![](https://github.com/Guilospanck/challenge-login-frontend/blob/main/wiser-frontend-test.gif)
 
 ## Instalação
 
-OS X & Linux:
-
-```sh
-npm install my-crazy-module --save
-```
-
-Windows:
-
-```sh
-edit autoexec.bat
-```
+Clone o repositório
 
 ## Exemplo de uso
 
@@ -41,21 +31,6 @@ Descreva como instalar todas as dependências para desenvolvimento e como rodar 
 make install
 npm test
 ```
-
-## Histórico de lançamentos
-
-* 0.2.1
-    * MUDANÇA: Atualização de docs (código do módulo permanece inalterado)
-* 0.2.0
-    * MUDANÇA: Remove `setDefaultXYZ()`
-    * ADD: Adiciona `init()`
-* 0.1.1
-    * CONSERTADO: Crash quando chama `baz()` (Obrigado @NomeDoContribuidorGeneroso!)
-* 0.1.0
-    * O primeiro lançamento adequado
-    * MUDANÇA: Renomeia `foo()` para `bar()`
-* 0.0.1
-    * Trabalho em andamento
 
 ## Meta
 
