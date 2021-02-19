@@ -1,13 +1,15 @@
 ![GitHub contributors](https://img.shields.io/github/contributors/guilospanck/challenge-login-frontend)
 ![Website](https://img.shields.io/website?url=https%3A%2F%2Fwiser-challenge-login-frontend.vercel.app%2F)
 ![node-current](https://img.shields.io/badge/node-14.x-brightgreen.svg)
-![GitHub followers](https://img.shields.io/github/followers/guilospanck?style=social)
-![GitHub User's stars](https://img.shields.io/github/stars/guilospanck?style=social)
+![GitHub](https://img.shields.io/github/license/guilospanck/challenge-login-frontend)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/guilospanck/challenge-login-frontend)
+![Lines of code](https://img.shields.io/tokei/lines/github/guilospanck/challenge-login-frontend)
+![GitHub language count](https://img.shields.io/github/languages/count/guilospanck/challenge-login-frontend)
+![GitHub top language](https://img.shields.io/github/languages/top/guilospanck/challenge-login-frontend)
 
-# Nome do produto
-> Descrição curta sobre o que seu projeto faz.
+# Wiser Challenge Login - Frontend
 
-De um a dois parágrafos sobre o que é seu projeto e o que ele faz.
+Pequeno projeto realizado como teste técnico para vaga de Frontend Developer na Wiser. O projeto conta com uma tela simples de login (responsiva), onde o usuário terá validações visuais de seus inputs.
 
 ![](../header.png)
 
