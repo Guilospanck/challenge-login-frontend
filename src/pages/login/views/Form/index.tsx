@@ -13,7 +13,8 @@ const Form = ({ viewModel }: Props) => {
       <InputContainer id="email" name="email" type="email" required placeholder="user.name@mail.com" autoFocus
         onInvalid={(event) => event.target.setCustomValidity('Informe um email válido.')} ref={viewModel.emailInputRef} data-testid="inputEmail"/>
       <LabelContainer htmlFor="pass" data-testid="labelPassword">SENHA</LabelContainer>
-      <InputContainer id="pass" name="pass" type="password" required placeholder="*******" ref={viewModel.passInputRef}  data-testid="inputPassword"/>
+      <InputContainer id="pass" name="pass" type="password" required placeholder="*******" ref={viewModel.passInputRef}  data-testid="inputPassword"
+        onInvalid={(event) => event.target.setCustomValidity('Informe a senha.')} />
       <ButtonDivContainer>
         <ButtonContainer type="submit" data-testid="button">ENTRAR</ButtonContainer>
       </ButtonDivContainer>
