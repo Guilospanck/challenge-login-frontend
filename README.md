@@ -9,7 +9,7 @@
 
 # Wiser Challenge Login - Frontend
 
-Pequeno projeto realizado como teste técnico para vaga de Frontend Developer na Wiser. O projeto conta com uma tela simples de login (responsiva), onde o usuário terá validações visuais de seus inputs.
+Pequeno projeto realizado como teste técnico para vaga de Frontend Developer na Wiser. O projeto conta com uma tela simples de login (responsiva), onde o usuário terá validações visuais de seus inputs. A aplicação é construída em [Next.js](https://nextjs.org/) e Typescript e faz uso do [mockAPI](https://mockapi.io/), um sistema de mock simples somente para validar requisição GET.
 
 Aplicação em servidor online: [Vercel](https://wiser-challenge-login-frontend.vercel.app/)
 
@@ -31,6 +31,11 @@ Então, para abrir o projeto, rode:
 yarn dev
 ```
 E navegue até localhost:3000/ no seu browser para ver o app funcionando.
+
+Credenciais para login de sucesso:
+- email: wiser@wiser.com
+- password: wiser
+
 > Caso deseje encerrar a aplicação, execute CTRL C.
 
 Para executar os testes, rode:
