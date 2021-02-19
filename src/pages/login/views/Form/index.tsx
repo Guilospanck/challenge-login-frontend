@@ -1,4 +1,4 @@
-import { InputContainer, LabelContainer, ButtonContainer } from './styles';
+import { InputContainer, LabelContainer, ButtonContainer, ButtonDivContainer } from './styles';
 
 const Form = () => {
   // const registerUser = async event => {
@@ -27,9 +27,9 @@ const Form = () => {
       <InputContainer id="name" name="name" type="text" autoComplete="name" required placeholder="user.name@mail.com" />
       <LabelContainer htmlFor="name">SENHA</LabelContainer>
       <InputContainer id="pass" name="pass" type="password" autoComplete="pass" required placeholder="*******" />
-      <div>
+      <ButtonDivContainer>
         <ButtonContainer type="submit">ENTRAR</ButtonContainer>
-      </div>
+      </ButtonDivContainer>
     </form>
   )
 };

@@ -13,6 +13,14 @@ export const LoginImage = styled.div`
   @media only screen and (max-width: 768px){
     background-position: 43%;
   }
+
+  @media only screen and (max-width: 375px){
+    grid-column: 1;
+    background-size: 140%;
+    background-position: 40%;
+    background-position-y: 0%;
+  }
+
 `;
 
 export const Container = styled.div`
@@ -25,12 +33,38 @@ export const Container = styled.div`
   @media only screen and (max-width: 768px){
     grid-template-columns: 30% 70%;
   }
+
+  @media only screen and (max-width: 375px){
+    grid-template-columns: 100%;
+  }
 `;
 
 export const FormContainer = styled.div`
   grid-column: 2;
   align-self: center;
   justify-self: center;
+
+  @media only screen and (max-width: 375px){
+    grid-column: 1;
+    position: absolute;
+    top: 20%;
+    left: 8.5%;
+  }
+`;
+
+export const MobileFormContainer = styled.div`
+
+  @media only screen and (max-width: 375px){
+    width: 311px;
+    height: 357px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: #FAF5FF;
+    border-radius: 8px;
+  }
+
 `;
 
 export const TitleContainer = styled.div`
@@ -42,8 +76,15 @@ export const TitleContainer = styled.div`
   font-weight: normal;
   font-size: 2.5rem;
   line-height: 3rem;
-
   color: #383E71;
+
+  @media only screen and (max-width: 375px){
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding-top: 24px;
+
+    text-align: center;
+  }
 `;
 
 export const SubtitleContainer = styled.div`
@@ -60,6 +101,16 @@ export const SubtitleContainer = styled.div`
 
   color: #989FDB;
 
+  @media only screen and (max-width: 375px){
+    width: 255px;
+    height: 20px;
+    margin-bottom: 0.6vh;
+
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    text-align: center;
+  }
+
 `;
 
 export const ForgotUserAndPassContainer = styled.div`
@@ -75,7 +126,11 @@ export const ForgotUserAndPassContainer = styled.div`
   line-height: 1.25rem;
 
   text-align: center;
-
   color: #989FDB;
+
+  @media only screen and (max-width: 375px){
+    padding-left: 14%;
+  }
+
 `;
 

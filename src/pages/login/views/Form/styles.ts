@@ -37,6 +37,14 @@ export const InputContainer = styled.input`
 
 `;
 
+export const ButtonDivContainer = styled.div`
+  @media only screen and (max-width: 375px){
+    display: flex;
+    padding-top: 5%;
+    justify-content: center;
+  }
+`;
+
 export const ButtonContainer = styled.button`
   width: 256px;
   height: 7.3vh;
@@ -48,4 +56,11 @@ export const ButtonContainer = styled.button`
   border-radius: 8px;
   border: none;
   cursor: pointer;
+
+  @media only screen and (max-width: 375px){
+    width: 168px;
+    height: 7.3vh;
+    box-shadow: none;
+  }
+
 `;
