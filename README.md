@@ -11,7 +11,7 @@
 
 Pequeno projeto realizado como teste técnico para vaga de Frontend Developer na Wiser. O projeto conta com uma tela simples de login (responsiva), onde o usuário terá validações visuais de seus inputs.
 
-![](../header.png)
+![](https://github.com/Guilospanck/challenge-login-frontend/edit/main/wiser-frontend-test)
 
 ## Instalação
 
