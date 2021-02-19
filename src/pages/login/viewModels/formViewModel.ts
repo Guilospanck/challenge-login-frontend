@@ -10,7 +10,9 @@ type Props = {
 export interface IUseFormViewModel {
   emailInputRef: RefObject<HTMLInputElement>,
   passInputRef: RefObject<HTMLInputElement>,
-  loginUser: (e: FormEvent) => void
+  loginUser: (e: FormEvent) => void,
+  setCustomValidityEmail: (customMsg?: string) => void,
+  setCustomValidityPassword: (customMsg?: string) => void
 };
 
 const useFormViewModel = ({ loginUseCase }: Props): IUseFormViewModel => {
@@ -20,6 +22,18 @@ const useFormViewModel = ({ loginUseCase }: Props): IUseFormViewModel => {
   const emailInputRef = useRef<HTMLInputElement>(null);
   const passInputRef = useRef<HTMLInputElement>(null);
 
+  const setCustomValidityEmail = (customMsg?: string) => {
+    emailInputRef.current?.setCustomValidity(
+      typeof customMsg === 'string' ? '' : 'Informe um email válido.',
+    );
+  };
+
+  const setCustomValidityPassword = (customMsg?: string) => {
+    passInputRef.current?.setCustomValidity(
+      typeof customMsg === 'string' ? '' : 'Informe a senha.',
+    );
+  };
+
   const loginUser = (e: FormEvent) => {
     e.preventDefault();
     let email = emailInputRef.current?.value as string;
@@ -28,7 +42,7 @@ const useFormViewModel = ({ loginUseCase }: Props): IUseFormViewModel => {
     dispatchActions(loginRequest(userCredentials));
   };
 
-  return { loginUser, passInputRef, emailInputRef };
+  return { loginUser, passInputRef, emailInputRef, setCustomValidityPassword, setCustomValidityEmail };
 };
 
 export default useFormViewModel;
