@@ -6,7 +6,7 @@ export const LoginImage = styled.div`
   height: 100vh;
 
   background-image:  linear-gradient(0deg, #130525 0%, rgba(105, 57, 153, 0) 100%),
-                  url('https://fastlife.fastshop.com.br/wp-content/uploads/2020/05/shutterstock_1220809918.jpg');
+                  url('/images/girl_note_image.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 

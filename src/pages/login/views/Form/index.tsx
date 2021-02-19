@@ -8,14 +8,14 @@ type Props = {
 const Form = ({ viewModel }: Props) => {
 
   return (
-    <FormContainer onSubmit={(e) => { e.preventDefault(); viewModel.loginUser(e.target.email.value, e.target.pass.value);}}>
-      <LabelContainer htmlFor="email">E-MAIL</LabelContainer>
-      <InputContainer id="email" name="email" type="email" autoComplete="email" required placeholder="user.name@mail.com" autoFocus
-        onInvalid={(event) => event.target.setCustomValidity('Informe um email válido.')} />
-      <LabelContainer htmlFor="pass">SENHA</LabelContainer>
-      <InputContainer id="pass" name="pass" type="password" autoComplete="pass" required placeholder="*******" />
+    <FormContainer onSubmit={viewModel.loginUser}>
+      <LabelContainer htmlFor="email" data-testid="labelEmail">E-MAIL</LabelContainer>
+      <InputContainer id="email" name="email" type="email" required placeholder="user.name@mail.com" autoFocus
+        onInvalid={(event) => event.target.setCustomValidity('Informe um email válido.')} ref={viewModel.emailInputRef} data-testid="inputEmail"/>
+      <LabelContainer htmlFor="pass" data-testid="labelPassword">SENHA</LabelContainer>
+      <InputContainer id="pass" name="pass" type="password" required placeholder="*******" ref={viewModel.passInputRef}  data-testid="inputPassword"/>
       <ButtonDivContainer>
-        <ButtonContainer type="submit">ENTRAR</ButtonContainer>
+        <ButtonContainer type="submit" data-testid="button">ENTRAR</ButtonContainer>
       </ButtonDivContainer>
     </FormContainer>
   )
