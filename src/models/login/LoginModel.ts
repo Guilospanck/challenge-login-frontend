@@ -1,6 +1,6 @@
 export class LoginModel {
 
-  private constructor (
+  constructor (
     public readonly email: string,
     public readonly password: string
   ){}

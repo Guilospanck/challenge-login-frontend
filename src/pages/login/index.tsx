@@ -1,12 +1,19 @@
 import LoginView from "./views";
-import useLoginViewModel from "./viewModels/loginViewModel";
+
+import Form from './views/Form';
+import useFormViewModel from './viewModels/formViewModel';
+import { LoginUseCase } from './useCases/loginUseCase';
+
+const FormComponent = () => {
+  const loginUseCase = new LoginUseCase();
+  const viewModel = useFormViewModel({ loginUseCase });
+
+  return <Form viewModel={viewModel} />
+};
 
 const Login = () => {
-
-  const loginViewModel = useLoginViewModel();
-
   return (
-    <LoginView viewModel={loginViewModel} />
+    <LoginView FormComponent={FormComponent} />
   );
 
 };

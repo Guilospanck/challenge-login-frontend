@@ -1,6 +1,8 @@
 import { createStore, applyMiddleware } from 'redux';
 
-export default (reducers, middlewares) => {
+const createStoreFunction =  (reducers, middlewares) => {
   const enhancer = applyMiddleware(...middlewares);
   return createStore(reducers, enhancer);
 };
+
+export default createStoreFunction;

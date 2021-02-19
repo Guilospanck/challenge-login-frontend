@@ -1,13 +1,8 @@
-import { IUseLoginViewModel } from "../viewModels/loginViewModel";
 import Form from "./Form";
 
 import { LoginImage, Container, FormContainer, TitleContainer, SubtitleContainer, ForgotUserAndPassContainer, MobileFormContainer, BackgroundRectangleMobile } from './styles';
 
-export type Props = {
-  viewModel: IUseLoginViewModel
-};
-
-const LoginView = ({ viewModel }: Props) => {
+const LoginView = ({FormComponent}) => {
 
   return (
     <Container>
@@ -19,7 +14,7 @@ const LoginView = ({ viewModel }: Props) => {
         <MobileFormContainer>
           <TitleContainer>Olá, seja <br /> bem-vindo!</TitleContainer>
           <SubtitleContainer>Para acessar a plataforma, faça seu login.</SubtitleContainer>
-          <Form />
+          <FormComponent />
         </MobileFormContainer>
         <ForgotUserAndPassContainer>Esqueceu seu login ou senha? Clique <a href="">aqui</a>
         </ForgotUserAndPassContainer>

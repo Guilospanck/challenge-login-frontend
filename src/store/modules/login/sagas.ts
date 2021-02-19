@@ -15,7 +15,7 @@ import {
 import { LoginModel } from '../../../models/login/LoginModel';
 
 
-function* login({payload}: {type: typeof LoginTypes.LOGIN_REQUEST; payload: LoginModel}) {
+function* login({ payload }: { type: typeof LoginTypes.LOGIN_REQUEST; payload: LoginModel }) {
 
   if (!payload) {
     toast.error('Complete os campos antes de proceder.');
@@ -30,7 +30,7 @@ function* login({payload}: {type: typeof LoginTypes.LOGIN_REQUEST; payload: Logi
 
     toast.success('Você está logado!');
     yield put(
-      loginSuccess(payload)
+      loginSuccess(response)
     );
   } catch (err) {
     if (!err.response) {

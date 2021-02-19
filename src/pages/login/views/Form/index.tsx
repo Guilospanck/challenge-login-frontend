@@ -1,31 +1,17 @@
 import { InputContainer, LabelContainer, ButtonContainer, ButtonDivContainer, FormContainer } from './styles';
+import { IUseFormViewModel } from '../../viewModels/formViewModel';
 
-const Form = () => {
-  // const registerUser = async event => {
-  //   event.preventDefault()
+type Props = {
+  viewModel: IUseFormViewModel
+};
 
-  //   const res = await fetch(
-  //     'https://hooks.zapier.com/hooks/catch/123456/abcde',
-  //     {
-  //       body: JSON.stringify({
-  //         name: event.target.name.value
-  //       }),
-  //       headers: {
-  //         'Content-Type': 'application/json'
-  //       },
-  //       method: 'POST'
-  //     }
-  //   )
-
-  //   const result = await res.json()
-  //   // result.user => 'Ada Lovelace'
-  // }
+const Form = ({ viewModel }: Props) => {
 
   return (
-    <FormContainer onSubmit={() => console.log('oi')}>
+    <FormContainer onSubmit={(e) => { e.preventDefault(); viewModel.loginUser(e.target.email.value, e.target.pass.value);}}>
       <LabelContainer htmlFor="email">E-MAIL</LabelContainer>
       <InputContainer id="email" name="email" type="email" autoComplete="email" required placeholder="user.name@mail.com" autoFocus
-      onInvalid={(event) => event.target.setCustomValidity('Informe um email válido.')} />
+        onInvalid={(event) => event.target.setCustomValidity('Informe um email válido.')} />
       <LabelContainer htmlFor="pass">SENHA</LabelContainer>
       <InputContainer id="pass" name="pass" type="password" autoComplete="pass" required placeholder="*******" />
       <ButtonDivContainer>
